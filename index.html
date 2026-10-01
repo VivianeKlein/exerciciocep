@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulta de CEP</h1>
+
+        <form id="formEndereco">
+            <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="Digite o CEP">
+            </div>
+
+            <div class="campo">
+                <label for="logradouro">Rua</label>
+                <input type="text" id="logradouro" readonly>
+            </div>
+
+            <div class="campo">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" readonly>
+            </div>
+
+            <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" readonly>
+            </div>
+
+            <div class="campo">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" readonly>
+            </div>
+
+            <button type="button" id="buscar">Buscar CEP</button>
+
+            <p id="mensagem"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
